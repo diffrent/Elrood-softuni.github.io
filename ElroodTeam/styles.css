@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans');
 body {
     max-width:1024px;
-
     margin: 0 auto;
     padding: 0;
     background: url("image/1479146686_535_bridge-wallpaper.jpg") no-repeat;
     background-size: cover;
-
 }
 
 .headarnav{
@@ -39,8 +37,13 @@ nav#topmenu li {
 }
 nav#topmenu a {
     text-decoration: none;
-    color: #777777;
+    color: darkgreen;
 }
+
+nav#topmenu a:hover {
+    color: rgba(255, 53, 32, 0.76);
+}
+
 h1 {
     font-family: Play,sans-serif;
     font-size: 25px;
@@ -66,6 +69,7 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     width:100%;
+
     box-shadow: 5px 10px 50px;
     background: url("image/softuni-nakov.jpg") no-repeat;
     background-size: cover;
@@ -86,14 +90,12 @@ section{
     box-shadow: 2px 5px 10px ;
     background: rgba(90, 255, 77, 0.74);
 }
-.a2{
+h1 a{
     text-decoration: none;
-    color: black;
-    max-width: 250px;
 }
-section a{
-    text-decoration: none;
-    color: black;
+
+a:hover {
+    color: rgba(255, 53, 32, 0.76);
 }
 
 p
@@ -121,11 +123,12 @@ figcaption{
 
 }
 .imgIndex{
-    display: inline-flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 250px;
-    max-height: 250px;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
     margin: 10px;
 
     border-radius: 10px;
